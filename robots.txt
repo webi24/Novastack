@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://novastack.com/sitemap.xml

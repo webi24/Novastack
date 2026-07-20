@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaStack — High-Converting Websites That Help American Businesses Grow</title>
+  <meta name="description" content="NovaStack is a premium Digital Growth Agency helping American businesses grow with high-converting websites, modern branding, SEO, and exceptional digital experiences." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://novastack.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://novastack.com/" />
+  <meta property="og:title" content="NovaStack — High-Converting Websites That Help American Businesses Grow" />
+  <meta property="og:description" content="NovaStack is a premium Digital Growth Agency helping American businesses grow with high-converting websites, modern branding, SEO, and exceptional digital experiences." />
+  <meta property="og:image" content="https://novastack.com/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NovaStack — High-Converting Websites That Help American Businesses Grow" />
+  <meta name="twitter:description" content="NovaStack is a premium Digital Growth Agency helping American businesses grow with high-converting websites, modern branding, SEO, and exceptional digital experiences." />
+  <meta name="twitter:image" content="https://novastack.com/og-image.jpg" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NovaStack",
+    "url": "https://novastack.com/",
+    "logo": "https://novastack.com/logo.png",
+    "description": "NovaStack is a premium Digital Growth Agency that helps American businesses grow through high-converting websites, modern branding, SEO, and exceptional digital experiences.",
+    "foundingDate": "2024",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+15551234567",
+      "contactType": "customer service",
+      "email": "hello@novastack.dev"
+    },
+    "sameAs": [
+      "https://twitter.com/novastack",
+      "https://linkedin.com/company/novastack",
+      "https://instagram.com/novastack"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- ============================================
+       LOADING SCREEN
+       ============================================ -->
+  <div id="loading-screen" role="status" aria-label="Loading">
+    <div class="loading-logo">
+      <h1 aria-hidden="true">NovaStack</h1>
+      <div class="loading-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="loading-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCROLL PROGRESS
+       ============================================ -->
+  <div id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- ============================================
+       CUSTOM CURSOR
+       ============================================ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="navbar-logo" aria-label="NovaStack Home">
+        <span class="logo-icon" aria-hidden="true">N</span>
+        NovaStack
+      </a>
+
+      <div class="navbar-links">
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="light-icon" aria-hidden="true">☀️</span>
+          <span class="dark-icon" aria-hidden="true">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-primary">
+          Get a Free Quote
+          <span aria-hidden="true">→</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">
+        Get a Free Quote
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <img
+      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"
+      alt="Modern office team collaborating"
+      class="hero-bg-image"
+      loading="lazy"
+    />
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Premium Digital Growth Agency
+        </div>
+        <h1 class="reveal">
+          We Build High Converting Websites That Help
+          <span class="gradient-text">American Businesses</span>
+          Grow
+        </h1>
+        <p class="reveal">
+          Whether you're a local business or a growing company, NovaStack creates beautiful,
+          lightning fast websites designed to generate more leads, build trust, and increase revenue.
+        </p>
+        <div class="hero-buttons reveal">
+          <a href="#contact" class="btn btn-primary btn-ripple">
+            Get Your Free Quote
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#portfolio" class="btn btn-outline btn-ripple">
+            View Our Work
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="hero-stat">
+            <div class="number" data-target="300" data-suffix="+">0</div>
+            <div class="label">Projects Completed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-target="150" data-suffix="+">0</div>
+            <div class="label">Happy Clients</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-target="5" data-suffix="">0</div>
+            <div class="label">Average Rating</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number" data-target="24" data-suffix="h">0</div>
+            <div class="label">Avg Response Time</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="hero-mockup" id="hero-mockup" aria-label="Website preview mockup">
+          <div class="mockup-browser-bar" aria-hidden="true">
+            <span class="mockup-dot"></span>
+            <span class="mockup-dot"></span>
+            <span class="mockup-dot"></span>
+          </div>
+          <div class="mockup-content" aria-hidden="true">
+            <div class="mockup-line"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-line color"></div>
+            <div class="mockup-line"></div>
+            <div class="mockup-line" style="width:90%"></div>
+            <div class="mockup-line" style="width:50%"></div>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-1" aria-hidden="true">
+          <span class="icon">⚡</span>
+          <span class="text">
+            Lightning Fast
+            <small>0.8s Load Time</small>
+          </span>
+        </div>
+        <div class="floating-card floating-card-2" aria-hidden="true">
+          <span class="icon">📱</span>
+          <span class="text">
+            100% Responsive
+            <small>All Devices</small>
+          </span>
+        </div>
+        <div class="floating-card floating-card-3" aria-hidden="true">
+          <span class="icon">🔒</span>
+          <span class="text">
+            Secure &amp; Safe
+            <small>SSL Encrypted</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TRUSTED BY SECTION
+       ============================================ -->
+  <section class="trusted-section" aria-label="Trusted by businesses">
+    <div class="container">
+      <p class="trusted-label reveal">Trusted by 150+ Businesses Across the U.S.</p>
+      <div class="trusted-grid reveal">
+        <span class="trusted-logo" style="font-size:1.4rem;font-weight:700;font-family:var(--font-heading)">Anderson Plumbing</span>
+        <span class="trusted-logo" style="font-size:1.4rem;font-weight:700;font-family:var(--font-heading)">Thompson Dental</span>
+        <span class="trusted-logo" style="font-size:1.4rem;font-weight:700;font-family:var(--font-heading)">Wilson Roofing</span>
+        <span class="trusted-logo" style="font-size:1.4rem;font-weight:700;font-family:var(--font-heading)">Carter Legal Group</span>
+        <span class="trusted-logo" style="font-size:1.4rem;font-weight:700;font-family:var(--font-heading)">Miller HVAC</span>
+        <span class="trusted-logo" style="font-size:1.4rem;font-weight:700;font-family:var(--font-heading)">Green Valley Co.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INDUSTRIES WE SERVE
+       ============================================ -->
+  <section class="industries-section" id="industries" aria-label="Industries we serve">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Industries We Serve</span>
+        <h2 class="section-title">Trusted by Businesses Across America</h2>
+        <p class="section-subtitle">
+          From local service providers to professional firms, we build websites that help businesses in every industry grow online.
+        </p>
+      </div>
+
+      <div class="industries-grid reveal">
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&q=80" alt="HVAC technician working" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">🔧</span>
+            <h3 class="industry-card-title">HVAC &amp; Home Services</h3>
+            <span class="industry-card-count">24+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&q=80" alt="Construction worker on site" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">🏗️</span>
+            <h3 class="industry-card-title">Construction &amp; Contractors</h3>
+            <span class="industry-card-count">18+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=500&q=80" alt="Medical professional in office" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">🏥</span>
+            <h3 class="industry-card-title">Medical &amp; Dental</h3>
+            <span class="industry-card-count">32+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&q=80" alt="Restaurant interior" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">🍽️</span>
+            <h3 class="industry-card-title">Restaurants &amp; Cafes</h3>
+            <span class="industry-card-count">27+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500&q=80" alt="Law firm office" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">⚖️</span>
+            <h3 class="industry-card-title">Law Firms &amp; Legal</h3>
+            <span class="industry-card-count">15+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&q=80" alt="Real estate professional" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">🏠</span>
+            <h3 class="industry-card-title">Real Estate</h3>
+            <span class="industry-card-count">20+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="Fitness center" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">💪</span>
+            <h3 class="industry-card-title">Fitness &amp; Wellness</h3>
+            <span class="industry-card-count">12+ Projects</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80" alt="Retail store" loading="lazy" />
+          <div class="industry-card-overlay">
+            <span class="industry-card-icon">🛍️</span>
+            <h3 class="industry-card-title">Retail &amp; E-Commerce</h3>
+            <span class="industry-card-count">35+ Projects</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section class="section services-section" id="services" aria-label="Our services">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Complete Digital Growth Solutions</h2>
+        <p class="section-subtitle">
+          From design to launch and beyond, we provide everything you need
+          to build a powerful online presence and attract more customers.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.1s">
+          <div class="service-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">🎨</div>
+          <h3>Web Design</h3>
+          <p>Custom, modern designs tailored to your brand identity and business goals.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.2s">
+          <div class="service-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">🏢</div>
+          <h3>Business Websites</h3>
+          <p>Professional websites that establish credibility and drive growth for your business.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.3s">
+          <div class="service-icon" style="background:rgba(124,58,237,0.08);color:var(--accent-purple)">🛒</div>
+          <h3>E-Commerce Stores</h3>
+          <p>Powerful online stores with seamless shopping experiences.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.4s">
+          <div class="service-icon" style="background:rgba(245,158,11,0.08);color:var(--accent-orange)">📄</div>
+          <h3>Landing Pages</h3>
+          <p>High-converting landing pages designed to maximize conversions.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.1s">
+          <div class="service-icon" style="background:rgba(236,72,153,0.08);color:var(--accent-pink)">🔄</div>
+          <h3>Website Redesign</h3>
+          <p>Transform your outdated website into a modern digital experience.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.2s">
+          <div class="service-icon" style="background:rgba(6,182,212,0.08);color:var(--accent-cyan)">🔧</div>
+          <h3>Website Maintenance</h3>
+          <p>Keep your website secure, updated, and performing at its best.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.3s">
+          <div class="service-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">📈</div>
+          <h3>SEO Optimization</h3>
+          <p>Improve your search rankings and get found by more customers.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.4s">
+          <div class="service-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">🚀</div>
+          <h3>Speed Optimization</h3>
+          <p>Blazing fast load times that keep visitors engaged and boost rankings.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.1s">
+          <div class="service-icon" style="background:rgba(124,58,237,0.08);color:var(--accent-purple)">☁️</div>
+          <h3>Hosting &amp; Domain</h3>
+          <p>Reliable hosting and domain setup with 99.9% uptime guarantee.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.2s">
+          <div class="service-icon" style="background:rgba(245,158,11,0.08);color:var(--accent-orange)">📧</div>
+          <h3>Business Email Setup</h3>
+          <p>Professional email addresses that build trust with your clients.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.3s">
+          <div class="service-icon" style="background:rgba(236,72,153,0.08);color:var(--accent-pink)">🔐</div>
+          <h3>SSL &amp; Security</h3>
+          <p>Protect your website and customer data with enterprise-grade security.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card glass-card reveal" style="--reveal-delay:0.4s">
+          <div class="service-icon" style="background:rgba(6,182,212,0.08);color:var(--accent-cyan)">💬</div>
+          <h3>Website Support</h3>
+          <p>24/7 expert support whenever you need assistance with your website.</p>
+          <a href="#contact" class="learn-more">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHY CHOOSE US
+       ============================================ -->
+  <section class="section why-section" id="why-us" aria-label="Why choose NovaStack">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Why NovaStack</span>
+        <h2 class="section-title">Why American Businesses Choose NovaStack</h2>
+        <p class="section-subtitle">
+          We combine cutting-edge technology with thoughtful design to deliver
+          exceptional results that help your business grow.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.1s">
+          <div class="why-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">🎯</div>
+          <h3>Modern Designs</h3>
+          <p>Award-winning designs that make your brand stand out from the competition.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.2s">
+          <div class="why-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Sites that load in under a second. Speed that keeps visitors engaged.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.3s">
+          <div class="why-icon" style="background:rgba(124,58,237,0.08);color:var(--accent-purple)">📱</div>
+          <h3>Mobile Responsive</h3>
+          <p>Flawless experiences across every device, from phones to ultra-wide monitors.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.4s">
+          <div class="why-icon" style="background:rgba(245,158,11,0.08);color:var(--accent-orange)">🔍</div>
+          <h3>SEO Ready</h3>
+          <p>Built with best practices to help you rank higher on search engines.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.1s">
+          <div class="why-icon" style="background:rgba(236,72,153,0.08);color:var(--accent-pink)">💰</div>
+          <h3>Affordable Pricing</h3>
+          <p>Premium quality websites at prices that make sense for growing businesses.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.2s">
+          <div class="why-icon" style="background:rgba(6,182,212,0.08);color:var(--accent-cyan)">🔒</div>
+          <h3>Secure Websites</h3>
+          <p>Enterprise-grade security to protect your data and build customer trust.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.3s">
+          <div class="why-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">📈</div>
+          <h3>Scalable Solutions</h3>
+          <p>Websites that grow with your business, from startup to enterprise.</p>
+        </div>
+
+        <div class="why-card glass-card reveal" style="--reveal-delay:0.4s">
+          <div class="why-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">🎧</div>
+          <h3>Ongoing Support</h3>
+          <p>We're always here to help with dedicated support whenever you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PORTFOLIO SECTION
+       ============================================ -->
+  <section class="section portfolio-section" id="portfolio" aria-label="Our portfolio">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Websites We've Built</h2>
+        <p class="section-subtitle">
+          Each project is crafted with care, attention to detail, and a focus on
+          delivering real business results.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item reveal" style="--reveal-delay:0.1s">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&q=80" alt="Elite Roofing Solutions website preview on laptop" loading="lazy" />
+            <div class="portfolio-overlay">
+              <a href="#" class="btn btn-primary btn-ripple" aria-label="Visit Elite Roofing Solutions website">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Elite Roofing Solutions</h3>
+            <p class="industry">Roofing &amp; Construction</p>
+            <div class="portfolio-tags">
+              <span>Next.js</span>
+              <span>Tailwind CSS</span>
+              <span>Google Maps</span>
+            </div>
+            <p style="font-size:0.8rem;color:var(--accent-emerald);font-weight:600;margin-top:8px">150% Increase in Online Leads</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item reveal" style="--reveal-delay:0.2s">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Precision HVAC Services website preview on laptop" loading="lazy" />
+            <div class="portfolio-overlay">
+              <a href="#" class="btn btn-primary btn-ripple" aria-label="Visit Precision HVAC website">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Precision HVAC Services</h3>
+            <p class="industry">HVAC &amp; Home Services</p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+            </div>
+            <p style="font-size:0.8rem;color:var(--accent-emerald);font-weight:600;margin-top:8px">60% More Contact Form Submissions</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item reveal" style="--reveal-delay:0.3s">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80" alt="Miller Family Dental website preview on laptop" loading="lazy" />
+            <div class="portfolio-overlay">
+              <a href="#" class="btn btn-primary btn-ripple" aria-label="Visit Miller Family Dental website">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Miller Family Dental</h3>
+            <p class="industry">Dental Clinic</p>
+            <div class="portfolio-tags">
+              <span>Next.js</span>
+              <span>Tailwind</span>
+              <span>PostgreSQL</span>
+            </div>
+            <p style="font-size:0.8rem;color:var(--accent-emerald);font-weight:600;margin-top:8px">40% Faster Website Speed</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item reveal" style="--reveal-delay:0.1s">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80" alt="Horizon Law Group website preview on laptop" loading="lazy" />
+            <div class="portfolio-overlay">
+              <a href="#" class="btn btn-primary btn-ripple" aria-label="Visit Horizon Law Group website">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Horizon Law Group</h3>
+            <p class="industry">Law Firm</p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>Framer Motion</span>
+              <span>Sanity CMS</span>
+            </div>
+            <p style="font-size:0.8rem;color:var(--accent-emerald);font-weight:600;margin-top:8px">Improved Google Rankings</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item reveal" style="--reveal-delay:0.2s">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Green Valley Landscaping website preview on laptop" loading="lazy" />
+            <div class="portfolio-overlay">
+              <a href="#" class="btn btn-primary btn-ripple" aria-label="Visit Green Valley Landscaping website">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Green Valley Landscaping</h3>
+            <p class="industry">Landscaping &amp; Outdoor</p>
+            <div class="portfolio-tags">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Prisma</span>
+            </div>
+            <p style="font-size:0.8rem;color:var(--accent-emerald);font-weight:600;margin-top:8px">150% Increase in Online Leads</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item reveal" style="--reveal-delay:0.3s">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80" alt="Prime Auto Repair website preview on laptop" loading="lazy" />
+            <div class="portfolio-overlay">
+              <a href="#" class="btn btn-primary btn-ripple" aria-label="Visit Prime Auto Repair website">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Prime Auto Repair</h3>
+            <p class="industry">Auto Repair &amp; Service</p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <p style="font-size:0.8rem;color:var(--accent-emerald);font-weight:600;margin-top:8px">60% More Contact Form Submissions</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT US
+       ============================================ -->
+  <section class="about-section" id="about" aria-label="About NovaStack">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80"
+            alt="NovaStack team collaborating on a project"
+            loading="lazy"
+          />
+          <div class="about-image-accent" aria-hidden="true">🚀</div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-label">About NovaStack</span>
+          <h2>We Build Digital Assets That Grow American Businesses</h2>
+          <p>
+            NovaStack is a premium Digital Growth Agency founded with a simple mission:
+            help small and medium-sized businesses across the United States establish a
+            powerful online presence without the agency-level price tag.
+          </p>
+          <p>
+            We combine modern design, cutting-edge development, and proven SEO strategies
+            to create websites that don't just look great — they actively generate leads,
+            build trust, and increase revenue for our clients.
+          </p>
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <div class="number">300+</div>
+              <div class="label">Projects Delivered</div>
+            </div>
+            <div class="about-stat">
+              <div class="number">98%</div>
+              <div class="label">Client Satisfaction</div>
+            </div>
+            <div class="about-stat">
+              <div class="number">4.9★</div>
+              <div class="label">Average Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROCESS SECTION
+       ============================================ -->
+  <section class="section process-section" id="process" aria-label="Our development process">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">How We Deliver Results</h2>
+        <p class="section-subtitle">
+          A proven methodology that delivers exceptional results, on time and
+          within budget for businesses across the United States.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">01</div>
+          <div class="process-step-content glass-card">
+            <h3>Discovery</h3>
+            <p>We learn about your business, goals, target audience, and competitors to define project requirements.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">02</div>
+          <div class="process-step-content glass-card">
+            <h3>Planning</h3>
+            <p>We create a detailed project plan including sitemap, wireframes, timeline, and milestones.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">03</div>
+          <div class="process-step-content glass-card">
+            <h3>Wireframing</h3>
+            <p>We design low-fidelity wireframes to establish the layout and user flow before visual design begins.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">04</div>
+          <div class="process-step-content glass-card">
+            <h3>UI Design</h3>
+            <p>We craft stunning visual designs with your brand identity at the center of every decision.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">05</div>
+          <div class="process-step-content glass-card">
+            <h3>Development</h3>
+            <p>We build your website using modern technologies with clean, scalable, production-ready code.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">06</div>
+          <div class="process-step-content glass-card">
+            <h3>Testing</h3>
+            <p>We rigorously test across devices, browsers, and scenarios to ensure everything works perfectly.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">07</div>
+          <div class="process-step-content glass-card">
+            <h3>Launch</h3>
+            <p>We deploy your website to production with zero downtime and monitor performance closely.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number" aria-hidden="true">08</div>
+          <div class="process-step-content glass-card">
+            <h3>Support</h3>
+            <p>We provide ongoing maintenance, updates, and dedicated support to keep your website thriving.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PRICING SECTION
+       ============================================ -->
+  <section class="section pricing-section" id="pricing" aria-label="Our pricing plans">
+    <div class="container">
+
+      <!-- Urgency Banner -->
+      <div class="pricing-banner reveal">
+        <span class="pricing-banner-icon" aria-hidden="true">⚡</span>
+        <span class="pricing-banner-text">
+          <span>Limited Time Launch Pricing</span> — Lock in our introductory rates before NovaStack expands.
+        </span>
+      </div>
+
+      <div class="text-center reveal">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Premium Websites Without Agency-Level Prices</h2>
+        <p class="section-subtitle">
+          Most agencies charge thousands. NovaStack delivers professional, high-quality websites at accessible prices for American small and medium businesses.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <article class="pricing-card glass-card reveal" style="--reveal-delay:0.1s">
+          <h3>Starter Website</h3>
+          <div class="price">$499 <span>USD</span></div>
+          <p class="description">Perfect for small businesses that need a professional online presence.</p>
+          <ul class="pricing-features">
+            <li><span class="check" aria-hidden="true">✓</span> Up to 5 Custom Pages</li>
+            <li><span class="check" aria-hidden="true">✓</span> Custom UI/UX Design</li>
+            <li><span class="check" aria-hidden="true">✓</span> Mobile Responsive Design</li>
+            <li><span class="check" aria-hidden="true">✓</span> Premium Website Layout</li>
+            <li><span class="check" aria-hidden="true">✓</span> Contact Form Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> WhatsApp Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> Social Media Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> Basic SEO Setup</li>
+            <li><span class="check" aria-hidden="true">✓</span> Google Analytics Setup</li>
+            <li><span class="check" aria-hidden="true">✓</span> Google Search Console Setup</li>
+            <li><span class="check" aria-hidden="true">✓</span> SSL Certificate</li>
+            <li><span class="check" aria-hidden="true">✓</span> Domain Connection</li>
+            <li><span class="check" aria-hidden="true">✓</span> Premium Web Hosting — 1 Year</li>
+            <li><span class="check" aria-hidden="true">✓</span> Website Speed Optimization</li>
+            <li><span class="check" aria-hidden="true">✓</span> Image Optimization</li>
+            <li><span class="check" aria-hidden="true">✓</span> 30 Days Free Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary btn-ripple">Get Started</a>
+        </article>
+
+        <!-- Professional (Featured) -->
+        <article class="pricing-card featured reveal" style="--reveal-delay:0.2s">
+          <span class="pricing-badge">Most Popular</span>
+          <h3>Professional Website <span aria-hidden="true" style="font-size:0.9rem">⭐</span></h3>
+          <div class="price">$899 <span>USD</span></div>
+          <p class="description">Perfect for growing businesses that want more customers and stronger online visibility.</p>
+          <ul class="pricing-features">
+            <li><span class="check" aria-hidden="true">✓</span> Up to 10 Custom Pages</li>
+            <li><span class="check" aria-hidden="true">✓</span> Advanced Custom Design</li>
+            <li><span class="check" aria-hidden="true">✓</span> Mobile Responsive Design</li>
+            <li><span class="check" aria-hidden="true">✓</span> Premium UI/UX</li>
+            <li><span class="check" aria-hidden="true">✓</span> Blog Setup</li>
+            <li><span class="check" aria-hidden="true">✓</span> Business Email Setup</li>
+            <li><span class="check" aria-hidden="true">✓</span> Google Business Profile Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> Advanced SEO Optimization</li>
+            <li><span class="check" aria-hidden="true">✓</span> Lead Generation Forms</li>
+            <li><span class="check" aria-hidden="true">✓</span> Appointment Booking Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> Social Media Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> Google Analytics &amp; Search Console</li>
+            <li><span class="check" aria-hidden="true">✓</span> SSL Certificate &amp; Security</li>
+            <li><span class="check" aria-hidden="true">✓</span> Premium Web Hosting — 1 Year</li>
+            <li><span class="check" aria-hidden="true">✓</span> Enhanced Security</li>
+            <li><span class="check" aria-hidden="true">✓</span> Daily Backups</li>
+            <li><span class="check" aria-hidden="true">✓</span> Website Performance Monitoring</li>
+            <li><span class="check" aria-hidden="true">✓</span> Content Assistance</li>
+            <li><span class="check" aria-hidden="true">✓</span> 90 Days Free Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-ripple">
+            Book a Free Consultation
+            <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <!-- Premium -->
+        <article class="pricing-card glass-card reveal" style="--reveal-delay:0.3s">
+          <h3>Premium Website</h3>
+          <div class="price">$1,499 <span>USD</span></div>
+          <p class="description">Perfect for businesses requiring advanced features and custom solutions.</p>
+          <ul class="pricing-features">
+            <li><span class="check" aria-hidden="true">✓</span> Up to 20 Pages</li>
+            <li><span class="check" aria-hidden="true">✓</span> Custom UI/UX Design</li>
+            <li><span class="check" aria-hidden="true">✓</span> Fully Responsive Design</li>
+            <li><span class="check" aria-hidden="true">✓</span> E-Commerce Functionality</li>
+            <li><span class="check" aria-hidden="true">✓</span> Online Payments Integration</li>
+            <li><span class="check" aria-hidden="true">✓</span> Booking Systems</li>
+            <li><span class="check" aria-hidden="true">✓</span> Customer Portals</li>
+            <li><span class="check" aria-hidden="true">✓</span> Custom Features &amp; Integrations</li>
+            <li><span class="check" aria-hidden="true">✓</span> Third-Party API Integrations</li>
+            <li><span class="check" aria-hidden="true">✓</span> Advanced Animations</li>
+            <li><span class="check" aria-hidden="true">✓</span> Advanced SEO &amp; Analytics</li>
+            <li><span class="check" aria-hidden="true">✓</span> Business Email Setup</li>
+            <li><span class="check" aria-hidden="true">✓</span> Premium Web Hosting — 1 Year</li>
+            <li><span class="check" aria-hidden="true">✓</span> SSL Certificate &amp; Security</li>
+            <li><span class="check" aria-hidden="true">✓</span> Daily Backups &amp; Monitoring</li>
+            <li><span class="check" aria-hidden="true">✓</span> Priority Support</li>
+            <li><span class="check" aria-hidden="true">✓</span> Monthly Website Reports</li>
+            <li><span class="check" aria-hidden="true">✓</span> Website Optimization</li>
+            <li><span class="check" aria-hidden="true">✓</span> 6 Months Free Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary btn-ripple">Request a Proposal</a>
+        </article>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="pricing-compare reveal">
+        <h3 class="pricing-compare-label">Compare Plans Side by Side</h3>
+        <div style="overflow-x:auto">
+          <table class="pricing-compare-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Starter</th>
+                <th class="highlight">Professional</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Custom Design</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Number of Pages</td>
+                <td>Up to 5</td>
+                <td>Up to 10</td>
+                <td>Up to 20</td>
+              </tr>
+              <tr>
+                <td>Mobile Optimization</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Hosting Included</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>SSL Certificate</td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>SEO Setup</td>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <td>Business Email</td>
+                <td><span class="dash">—</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Blog</td>
+                <td><span class="dash">—</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Booking System</td>
+                <td><span class="dash">—</span></td>
+                <td><span class="check-mark">✓</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>E-Commerce</td>
+                <td><span class="dash">—</span></td>
+                <td><span class="dash">—</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Custom Integrations</td>
+                <td><span class="dash">—</span></td>
+                <td><span class="dash">—</span></td>
+                <td><span class="check-mark">✓</span></td>
+              </tr>
+              <tr>
+                <td>Support Duration</td>
+                <td>30 Days</td>
+                <td>90 Days</td>
+                <td>6 Months</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Trust Message -->
+      <div class="pricing-trust reveal">
+        <h3>Premium Websites Without Agency-Level Prices</h3>
+        <p>
+          Most U.S. agencies charge thousands of dollars for professional websites. NovaStack keeps costs accessible while delivering modern design, strong performance, SEO foundations, and the features businesses need to grow online.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS SECTION
+       ============================================ -->
+  <section class="section testimonials-section" id="testimonials" aria-label="Client testimonials">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">Trusted by Business Owners Across America</h2>
+        <p class="section-subtitle">
+          Don't take our word for it. Here's what business owners like you have
+          to say about working with NovaStack.
+        </p>
+      </div>
+
+      <div class="testimonials-carousel reveal" id="testimonials-carousel" aria-label="Testimonials carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-inner glass-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="testimonial-text">
+                "NovaStack completely transformed our online presence. Within weeks of launching our new website,
+                we started receiving significantly more inquiries. The team was professional, responsive, and
+                delivered ahead of schedule."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">MA</div>
+                <div class="testimonial-author-info">
+                  <h4>Michael Anderson</h4>
+                  <span>Owner, Anderson Plumbing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner glass-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="testimonial-text">
+                "Our website looks incredible, loads fast, and has helped us attract more patients.
+                NovaStack understood exactly what we needed and delivered a site that truly represents
+                the quality of our practice."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">ST</div>
+                <div class="testimonial-author-info">
+                  <h4>Sarah Thompson</h4>
+                  <span>Founder, Thompson Dental Care</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner glass-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="testimonial-text">
+                "The team delivered exactly what they promised. Professional, responsive, and easy to work with.
+                Our new website has already brought in multiple new clients and we couldn't be happier
+                with the result."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">DW</div>
+                <div class="testimonial-author-info">
+                  <h4>David Wilson</h4>
+                  <span>Owner, Wilson Roofing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner glass-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="testimonial-text">
+                "Our new website reflects the quality of our firm and has significantly improved client inquiries.
+                NovaStack delivered a stunning, professional site that has become one of our strongest
+                marketing assets."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">EC</div>
+                <div class="testimonial-author-info">
+                  <h4>Emily Carter</h4>
+                  <span>Managing Director, Carter Legal Group</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner glass-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="testimonial-text">
+                "NovaStack built a website that not only looks amazing but also brings us consistent leads
+                every month. Our phone has been ringing off the hook since the launch. Best investment
+                we've made for our business."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">JM</div>
+                <div class="testimonial-author-info">
+                  <h4>James Miller</h4>
+                  <span>Owner, Miller HVAC Solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prev-testimonial" aria-label="Previous testimonial">
+            <span aria-hidden="true">←</span>
+          </button>
+          <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Testimonial slides">
+            <button class="carousel-dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-index="0"></button>
+            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-index="1"></button>
+            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 3" data-index="2"></button>
+            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 4" data-index="3"></button>
+            <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Slide 5" data-index="4"></button>
+          </div>
+          <button class="carousel-btn" id="next-testimonial" aria-label="Next testimonial">
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ SECTION
+       ============================================ -->
+  <section class="section faq-section" id="faq" aria-label="Frequently asked questions">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about working with NovaStack for your business.
+        </p>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            How long does website development take?
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Most standard websites take 2-4 weeks from start to launch. Complex projects with custom functionality may take 6-8 weeks. We'll provide a detailed timeline during our initial consultation based on your specific requirements and business needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much does a website cost?
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our professional business website package starts at $800 USD. Pricing varies based on complexity, features, and page count. We offer transparent pricing with no hidden fees. Contact us for a free, no-obligation quote tailored to your specific business needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide hosting?
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! All our plans include free hosting for the first year with 99.9% uptime guarantee. After the first year, hosting can be renewed at competitive rates. We handle all the technical setup so you don't have to worry.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I update my website myself?
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! We build websites with easy-to-use content management systems (CMS) that allow you to update text, images, and content without any technical knowledge. We also provide a training session to get you comfortable.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you redesign existing websites?
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we specialize in website redesigns. We'll analyze your current site, identify areas for improvement, and create a modern, high-performing website that better represents your brand and achieves your business goals.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer ongoing support?
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We offer comprehensive maintenance and support packages to keep your website secure, updated, and performing optimally. Our team is available 24/7 to assist with any issues or questions you may have.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA SECTION
+       ============================================ -->
+  <section class="cta-section" id="cta" aria-label="Ready to grow your business">
+    <img
+      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80"
+      alt="Modern tech workspace"
+      class="cta-bg-image"
+      loading="lazy"
+    />
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Grow Your Business Online?</h2>
+        <p>
+          Join 300+ American businesses that trust NovaStack for their web design,
+          development, and digital growth. Get a free, no-obligation consultation today.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-ripple">
+          Get Your Free Consultation
+          <span aria-hidden="true">→</span>
+        </a>
+        <div class="cta-guarantee">
+          <span aria-hidden="true"></span>
+          No commitment required. Free proposal within 24 hours.
+          <span aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="section contact-section" id="contact" aria-label="Contact us">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's Build Your Website</h2>
+        <p class="section-subtitle">
+          Ready to grow your business online? Fill out the form below and we'll
+          get back to you within 24 hours with a free, no-obligation proposal.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form glass-card reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" placeholder="Your Business, LLC" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" placeholder="Describe your vision, goals, and any specific requirements..." required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-ripple">
+            Send Message
+            <span aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <div class="contact-info reveal-right">
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@novastack.dev</p>
+            </div>
+          </div>
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon" style="background:rgba(5,150,105,0.08);color:var(--accent-emerald)">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon" style="background:rgba(37,211,102,0.08);color:#25D366">💬</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>Chat with NovaStack</p>
+            </div>
+          </div>
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon" style="background:rgba(124,58,237,0.08);color:var(--accent-purple)">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Mon – Fri, 9:00 AM – 6:00 PM EST</p>
+            </div>
+          </div>
+
+          <div class="contact-map" aria-label="Map placeholder">
+            <p>📍 Serving Businesses Across the United States</p>
+          </div>
+
+          <a href="https://wa.me/15551234567" target="_blank" rel="noopener" class="btn btn-whatsapp btn-ripple" style="margin-top:8px">
+            💬 Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand reveal">
+          <h2 aria-label="NovaStack">NovaStack</h2>
+          <p>NovaStack is a premium Digital Growth Agency that helps American businesses grow through high-converting websites, modern branding, SEO, and exceptional digital experiences.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter" rel="noopener noreferrer">𝕏</a>
+            <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">in</a>
+            <a href="#" aria-label="Instagram" rel="noopener noreferrer">IG</a>
+            <a href="#" aria-label="Facebook" rel="noopener noreferrer">f</a>
+            <a href="#" aria-label="YouTube" rel="noopener noreferrer">▶</a>
+          </div>
+        </div>
+
+        <div class="reveal" style="--reveal-delay:0.1s">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#industries">Industries</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="reveal" style="--reveal-delay:0.2s">
+          <h3>Services</h3>
+          <div class="footer-links">
+            <a href="#services">Web Design</a>
+            <a href="#services">E-Commerce</a>
+            <a href="#services">SEO Services</a>
+            <a href="#services">Maintenance</a>
+            <a href="#services">Hosting &amp; Domain</a>
+            <a href="#services">Support</a>
+          </div>
+        </div>
+
+        <div class="reveal" style="--reveal-delay:0.3s">
+          <h3>Stay Updated</h3>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:12px">
+            Subscribe to our newsletter for web design tips and insights for your business.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter" required />
+            <button type="submit" aria-label="Subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NovaStack. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       WHATSAPP FLOATING BUTTON
+       ============================================ -->
+  <div class="whatsapp-float" aria-label="Chat with NovaStack on WhatsApp">
+    <span class="whatsapp-tooltip">Chat with NovaStack</span>
+    <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+      💬
+    </a>
+  </div>
+
+  <!-- ============================================
+       BACK TO TOP BUTTON
+       ============================================ -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- ============================================
+       TOAST NOTIFICATION
+       ============================================ -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
