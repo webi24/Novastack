@@ -213,21 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   const heroMockup = document.getElementById('hero-mockup');
 
-  if (heroMockup && window.innerWidth > 992) {
-    document.querySelector('.hero-visual').addEventListener('mousemove', (e) => {
-      const rect = heroMockup.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      const rotateY = (x / rect.width) * 6;
-      const rotateX = -(y / rect.height) * 4;
-      heroMockup.style.transform = `perspective(1000px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
-    });
-
-    document.querySelector('.hero-visual').addEventListener('mouseleave', () => {
-      heroMockup.style.transform = 'perspective(1000px) rotateY(-5deg) rotateX(2deg)';
-    });
-  }
-
   // ==========================================
   // PARTICLES (Canvas)
   // ==========================================
@@ -327,69 +312,68 @@ document.addEventListener('DOMContentLoaded', () => {
   let autoplayInterval;
   const totalSlides = dots.length;
 
-  function goToSlide(index) {
-    if (index < 0) index = totalSlides - 1;
-    if (index >= totalSlides) index = 0;
-    currentSlide = index;
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === currentSlide);
-      dot.setAttribute('aria-selected', i === currentSlide);
-    });
-  }
+  if (track && prevBtn && nextBtn && totalSlides > 0) {
+    function goToSlide(index) {
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      currentSlide = index;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+        dot.setAttribute('aria-selected', i === currentSlide);
+      });
+    }
 
-  prevBtn.addEventListener('click', () => {
-    goToSlide(currentSlide - 1);
-    resetAutoplay();
-  });
-
-  nextBtn.addEventListener('click', () => {
-    goToSlide(currentSlide + 1);
-    resetAutoplay();
-  });
-
-  dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      goToSlide(parseInt(dot.getAttribute('data-index')));
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
       resetAutoplay();
     });
-  });
 
-  // Autoplay
-  function startAutoplay() {
-    autoplayInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
-  }
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+      resetAutoplay();
+    });
 
-  function resetAutoplay() {
-    clearInterval(autoplayInterval);
-    startAutoplay();
-  }
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goToSlide(parseInt(dot.getAttribute('data-index')));
+        resetAutoplay();
+      });
+    });
 
-  startAutoplay();
-
-  // Pause on hover
-  const carousel = document.getElementById('testimonials-carousel');
-  carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
-  carousel.addEventListener('mouseleave', () => startAutoplay());
-
-  // Touch swipe
-  let touchStartX = 0;
-  let touchEndX = 0;
-
-  carousel.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-    clearInterval(autoplayInterval);
-  }, { passive: true });
-
-  carousel.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    const diff = touchStartX - touchEndX;
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) goToSlide(currentSlide + 1);
-      else goToSlide(currentSlide - 1);
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
     }
+
+    function resetAutoplay() {
+      clearInterval(autoplayInterval);
+      startAutoplay();
+    }
+
     startAutoplay();
-  }, { passive: true });
+
+    const carousel = document.getElementById('testimonials-carousel');
+    carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+    carousel.addEventListener('mouseleave', () => startAutoplay());
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      clearInterval(autoplayInterval);
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) goToSlide(currentSlide + 1);
+        else goToSlide(currentSlide - 1);
+      }
+      startAutoplay();
+    }, { passive: true });
+  }
 
   // ==========================================
   // FAQ ACCORDION
@@ -493,17 +477,50 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // SMOOTH SCROLL FOR ANCHOR LINKS
+  // PAGE-STYLE SECTION NAVIGATION
   // ==========================================
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const sectionLinks = document.querySelectorAll('a[href^="#"]');
+  const sections = document.querySelectorAll('section[id]');
+
+  function showSection(id) {
+    let found = false;
+    sections.forEach(section => {
+      if ('#' + section.id === id) {
+        section.classList.remove('page-hidden');
+        found = true;
+      } else {
+        section.classList.add('page-hidden');
       }
     });
+
+    if (!found) {
+      sections.forEach(section => section.classList.remove('page-hidden'));
+    }
+  }
+
+  function handleSectionLinkClick(e) {
+    const href = this.getAttribute('href');
+    if (!href || href === '#') return;
+
+    const target = document.querySelector(href);
+    if (href.startsWith('#') && target) {
+      e.preventDefault();
+      showSection(href);
+      window.history.replaceState(null, '', href);
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }
+
+  sectionLinks.forEach(anchor => {
+    anchor.addEventListener('click', handleSectionLinkClick);
   });
+
+  const initialHash = window.location.hash || '#home';
+  if (document.querySelector(initialHash)) {
+    showSection(initialHash);
+  } else {
+    showSection('#home');
+  }
 
   // ==========================================
   // SERVICE CARDS: FLOATING ANIMATION
